@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">What species are you exporting?
+      </h1>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="enter-species">
+          Enter the species
+        <label>
+        <span id="species-hint" class="govuk-hint">
+          Enter the species or FAO code.
+        </span>
+        <input class="govuk-input govuk-input--width-10" id="species-name" name="species-name" type="text" aria-describedby="national-insurance-number-hint">
+      </div>
+
+        <a href="enterpreservation.html" role="button" class="govuk-button">Add</a>
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

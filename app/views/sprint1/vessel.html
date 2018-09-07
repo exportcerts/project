@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Add a landing for this species
+      </h1>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="vessel-name">
+          Enter a vessel
+        </label>
+        <span id="species-hint" class="govuk-hint">
+          Enter vessel name, PLN or RSS.
+        </span>
+        <input class="govuk-input govuk-input--width-10" id="vessel-name" name="vessel-name" type="text" aria-describedby="enter-a-vessel">
+      </div>
+      <br/>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="dob-hint" role="group">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <label class="govuk-label" for="date-label">
+              Enter the date the catch was landed
+            </label>
+            <span id="date-hint" class="govuk-hint">
+              For example, 31 3 1980.
+            </span>
+      
+          <div class="govuk-date-input" id="dob">
+      
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2 " id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+      
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2 " id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+      
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4 " id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <br/>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="vessel-name">
+          Enter the weight of this catch
+        </label>
+        <span id="species-hint" class="govuk-hint">
+          Enter the weight in kg
+        </span>
+        <input class="govuk-input govuk-input--width-10" id="vessel-name" name="vessel-name" type="text" aria-describedby="enter-a-vessel">
+      </div>
+        <a href="transport.html" role="button" class="govuk-button">Continue</a>
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
