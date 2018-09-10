@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="transport.html">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Check your answers
+      </h1>
+
+      <!-- only add a heading for a list if there is more than one list -->
+      <h2 class="govuk-heading-m">
+        Species details
+      </h2>
+
+      <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+      <!--   * `app-check-your-answers--short` for short questions -->
+      <!--   * `app-check-your-answers__questions-long` for long questions -->
+      <!--   * none for single group of q&a -->
+      <dl class="app-check-your-answers app-check-your-answers--short">
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Species
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Cod
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden">species</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            State
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Alive
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden">state</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Presentation
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Whole
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden">presentation</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Product code
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            30363300
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden">product code</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <p class="govuk-body">
+        <a href="enterspecies.html" class="govuk-link">Add another species</a>
+      </p>
+      
+      <a class="govuk-button" href="vessel.html" role="button">
+        Continue
+      </a>
+
+    </div>
+  </div>
+{% endblock %}
